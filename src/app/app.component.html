@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./app.component.scss">
+  </head>
+  <body>
+    <div>
+      <h1>Angular Project</h1>
+    
+      <!-- Task 1 -->
+    
+      <div>
+        <textarea [(ngModel)]="newInputData" placeholder="Type here..."></textarea><br><br>
+        <button (click)="logInputData()"> Input Data</button>
+        <button (click)="submitNewValue()">New Value</button>
+       
+        <app-child [inputData]="inputData"></app-child>
+      </div>
+    
+      <!-- Task 2 -->
+      <app-complete></app-complete>
+    
+      <!-- Task 3 -->
+      <app-content>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, corporis harum saepe impedit ipsum, accusamus sunt, perspiciatis illum laudantium delectus repellat sequi esse ab in nesciunt. Velit vel sapiente amet.</p>
+      </app-content>
+    </div>
+  </body>
+</html>
